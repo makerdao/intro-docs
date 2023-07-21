@@ -1,3 +1,5 @@
+{% hint style="warning" %} This documentation describes certain core aspects of MakerDAO's protocol that could change over time. Be aware that parts may be inaccurate or out of date. {% endhint %}
+
 # MakerDAO
 
 MakerDAO is a decentralized entity dedicated to bringing stability to the cryptocurrency economy. Established in 2014, MakerDAO operates as an open-source project on the Ethereum blockchain, functioning as a Decentralized Autonomous Organization (DAO). The platform utilizes the Maker protocol to generate Dai, a stablecoin backed by collateral assets approved through its governance.
