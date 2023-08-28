@@ -25,7 +25,7 @@ DAI is a stable, fully collateralized, and decentralized currency pegged to the 
 
 ## What are Maker Vaults?
 
-Maker Vaults are a mechanism in which users can create DAI by locking up other cryptotokens as collateral. Anyone can create a Maker Vault using the Ethereum blockchain at any time.
+Maker Vaults are a mechanism in which users can create DAI by locking up other cryptoassets and real-world assets as collateral. Anyone can create a Maker Vault using the Ethereum blockchain at any time.
 
 [Learn more...](overview/vaults.md)
 
@@ -37,7 +37,7 @@ MKR is the governance token of the Maker Protocol. Owners of MKR vote on risk an
 
 ## What is MakerDAO?
 
-MakerDAO is the [DAO](https://www.investopedia.com/tech/what-dao/) that governs and works on the Maker Protocol. Many within MakerDAO hold the MKR token, but this is not a requirement, nor is there a well-defined set of members.
+MakerDAO is a [DAO](https://www.investopedia.com/tech/what-dao/), a Decentralized Autonomous Organization that governs and works on the Maker Protocol through its governance system and the MKR token. Many within MakerDAO hold the MKR token, but this is not a requirement, nor is there a well-defined set of members.
 
 [Learn more...](overview/makerdao.md)
 

@@ -14,7 +14,7 @@ A decentralized digital economy needs stable money in order to function. Dai is 
 
 Dai enables a wide range of financial activities and applications that have previously been impracticable due to the volatility of legacy cryptocurrencies like Bitcoin.
 
-Dai is the world's first unbiased stable currency that does not discriminate. Any individual or business can realize the advantages of digital money. No one can forcefully seize nor freeze Dai.
+Dai is the world's first unbiased stable currency that does not discriminate. Any individual or business can realize the advantages of digital money. No one can forcefully seize or freeze Dai.
 
 ## How does Dai stay stable?
 
@@ -36,23 +36,24 @@ For more information about the PSM, please refer to the [Maker Manual](https://m
 
 ### Maker Vaults
 
-Maker Vaults have a crucial role as they enable the generation of Dai by locking up collateral. This process significantly affects the total Dai supply and ensures transparency and auditability. Vaults maintain overcollateralization using a Liquidation Ratio to protect Dai's backing from volatile collateral devaluation. Additionally, a debt ceiling is enforced to limit exposure to risky or illiquid collaterals. Stability Fees are imposed on Dai generators to effectively manage the peg, fund Maker Protocol development and maintenance, and incentivize active participation in governance.
-
+[Maker Vaults](https://manual.makerdao.com/parameter-index/vault-risk) play a crucial role as they enable the minting of Dai by locking up collateral. Vaults increase the total Dai supply and ensure transparency and auditability. Vaults are overcollateralized relative to the amount of Dai minted to protect Dai's from being unbacked. Additionally, a debt ceiling is enforced to limit exposure to risky or illiquid collaterals. Stability Fees are imposed on Dai generators to effectively manage the peg, fund Maker Protocol development and maintenance.
 
 ### Vaults Stability Fees
 
-When creating Dai using Maker Vaults, the vault owner pays an ongoing Stability Fee. Maker Governance can increase or decrease these fees. These fee adjustments can be used to encourage owners of Maker Vaults to create or destroy Dai due to an increased or decreased ongoing cost. In this way, Maker Governance can affect the _supply_ of Dai.
+When minting Dai using Maker Vaults, the vault owner pays an ongoing Stability Fee. Maker Governance can increase or decrease these fees. These fee adjustments can be used to encourage owners of Maker Vaults to mint or burn Dai due to an increased or decreased ongoing cost. In this way, Maker Governance can affect the supply of Dai.
 
 This mechanism is most effective at maintaining the Dai peg in the medium/long term.
 
 ###  The Dai Savings Rate
 
-The Dai Savings Rate (DSR) serves as an interest rate offered to Dai holders who choose to deposit their Dai into the DSR smart contract. This incentivizes users to retain their Dai within the system, as they earn rewards for doing so. As a dynamic parameter subject to governance by MKR token holders, the DSR can be adjusted based on market conditions and protocol requirements. This mechanism allows to manage the demand for Dai and contributes to the overall stability and resilience of the MakerDAO platform.
+The [Dai Savings Rate (DSR)](https://manual.makerdao.com/parameter-index/core/param-dai-savings-rate) serves as an interest rate offered to Dai holders who choose to deposit their Dai into the DSR smart contract. This incentivizes users to retain their Dai within the system, as they earn rewards for doing so. As a dynamic parameter subject to governance by MKR token holders, the DSR can be adjusted based on market conditions and protocol requirements. This mechanism allows to manage the demand for Dai and contributes to the overall stability and resilience of the MakerDAO platform.
 
 This mechanism is most effective at maintaining the Dai peg in the medium/long term.
 
 ### Global Settlement
 
-MKR Holders can decide to shut down the Maker Protocol in order to protect its users, this is known as Global Settlement. At Global Settlement, Dai can be redeemed directly for $1 of collateral that backs it.
+MKR token holders can initiate a shutdown process known as Global Settlement. This mechanism guarantees user protection by facilitating the redemption of Dai tokens in exchange for their underlying collateral.
 
-This mechanism is primarily a game-theoretical fallback, meant only to be used if other mechanisms have failed. The existence of global settlement contributes to the success of the other mechanisms by providing confidence to market participants that Dai will always be worth $1.
+This mechanism is primarily a game-theoretical fallback, meant only to be used if other mechanisms have failed, and operates in parallel with the [Emergency Shutdown Module](https://manual.makerdao.com/module-index/module-emergency-shutdown). Global Settlement acts as a safeguard, particularly when other protocols are unable to maintain stability.
+
+After the implementation of Global Settlement, Dai holders gain the right to a pro-rata share of the collateral, with any excess collateral held by vault owners excluded from the calculation. However, it's crucial to emphasize that the redemption value of Dai may deviate from the $1 benchmark. 
